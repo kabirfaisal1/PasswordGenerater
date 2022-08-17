@@ -27,7 +27,7 @@ Everytime you run the application, you would need to refresh the screen before c
  ### local
  ```
  1. Open terminal
- 2. Run `git clone https://github.com/kabirfaisal1/PasswordGenerated.git`
+ 2. Run `git clone https://github.com/kabirfaisal1/PasswordGenerater.git`
  3. After clone is done run 
     ` [ open -a 'google chrome' <filepath>/PasswordGenerated/index.html ]`
  ```
