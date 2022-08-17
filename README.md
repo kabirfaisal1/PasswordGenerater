@@ -4,11 +4,12 @@ Working on a application that generated a random password based user-selected cr
 # Application criteria
 1. User will have empty container with a place holder text 'your secure password' which will be populated after user picks all the criteria thats needed.
 2. a button which is the starting point of creating genrateing password
-3. a pop up screen with list of checkbox criteria
+3. a prompt screen with list of checkbox criteria
     a. Add numerical vaules
     b. Add aplhabet vaules
     c. Add special character vaules
 4. User will have to input length vaule between 8 to 128 characters
+5. user have to have minimum of three criteria as true. lowser and upper case has to be part of the selection at all time
 6. If users missed to slelect a criteria or input length of characters error message will be displayed 
 
 # Folder structure 
@@ -70,5 +71,5 @@ THEN the password is either displayed in an alert or written to the page
  7. User by clicking any three or more criteria with length >128
  8. User by clicking any three or more criteria with length between 8 to 128
  9. User by clicking any three (use TC 3 or 2) or more criteria (TC 1) and hit cancel on lenght 
- 10. User by clicking any three (use TC 3 or 2) or more criteria (TC 1) with alphabet vaule as the length
+ 10.User by clicking any three (use TC 3 or 2) or more criteria (TC 1) with alphabet vaule as the length
 ```
