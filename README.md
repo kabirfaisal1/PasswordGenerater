@@ -73,4 +73,4 @@ THEN the password is either displayed in an alert or written to the page
 ```
  Test 1,5,6 outcome should look:
 
- ![Algorithm schema](../PasswordGenerater/image/criteria_met.png)
+ ![Screenshot](../PasswordGenerater/image/criteria_met.png)
