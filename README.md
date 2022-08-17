@@ -62,10 +62,13 @@ THEN the password is either displayed in an alert or written to the page
 ## Test case
 ```
  1. User by clicking all criteria
- 2. User by clicking any three criteria
- 3. User by clicking criteria that are not lowercase, uppercase,
- 4. User by clicking no criteria
- 5. User by clicking any three or more criteria with length <8
- 6. User by clicking any three or more criteria with length >128
- 7. User by clicking any three or more criteria with length between 8 to 128
+ 2. User by clicking lowercase, uppercase with criteria numeric only
+ 3. User by clicking lowercase, uppercase with special characters only
+ 4. User by clicking cancel for lowercase, uppercase and add numeric or special characters only 
+ 5. User by clicking cancel on all criteria
+ 6. User by clicking any three (use TC 3 or 2) or more criteria (TC 1) with length <8
+ 7. User by clicking any three or more criteria with length >128
+ 8. User by clicking any three or more criteria with length between 8 to 128
+ 9. User by clicking any three (use TC 3 or 2) or more criteria (TC 1) and hit cancel on lenght 
+ 10. User by clicking any three (use TC 3 or 2) or more criteria (TC 1) with alphabet vaule as the length
 ```
