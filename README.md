@@ -26,11 +26,13 @@ Everytime you run the application, you would need to refresh the screen before c
  ```
 
  ### local
- 1. Open terminal
- 
- $ git clone https://github.com/kabirfaisal1/PasswordGenerater.git
- $ open -a 'google chrome' <filepath>/PasswordGenerater/index.html
- 
+ Open terminal
+ ```
+ git clone https://github.com/kabirfaisal1/PasswordGenerater.git
+ ```
+ ```
+ open -a 'google chrome' <filepath>/PasswordGenerater/index.html
+ ```
 # User Story
 
 ```
