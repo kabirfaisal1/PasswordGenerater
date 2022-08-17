@@ -78,12 +78,11 @@ function passwordCriteria(criteriaList){
 function passwordlength(){
   var min = 8;
   var max = 128;
-  userSelectedlength = parseInt(prompt('Input the length of your password between 8 to 128'));
-    while(userSelectedlength<min || userSelectedlength>max){
-        if(userSelectedlength !== null || userSelectedlength !== false){
+  userSelectedlength = parseInt(prompt('Input the length of your password between 8 to 128', 8));
+    while(userSelectedlength<min || userSelectedlength>max || !userSelectedlength){
         userSelectedlength = parseInt(prompt(`You entered ${userSelectedlength} is out of rang. Input the length of your password between 8 to 128`));
       }
-    }
+    
 
   return userSelectedlength;
 }
