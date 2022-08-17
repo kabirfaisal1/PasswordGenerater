@@ -38,7 +38,7 @@ function generatePassword(){
   console.log(`user set length of the password to be ${userSelectedlength}`);
 
   //this is starting the workflow and generate the password after users answers and the shuffle criteria vaules based on users selections 
-  if(userAddingcriteria.length==4){
+  if(userAddingcriteria.length==4 && userSelectedlength){
     console.log(`user only wants ${userAddingcriteria} and length of ${userSelectedlength}`);
     passwordCharacters = alphabet.toLowerCase() + alphabet + numeric + speciaCharacters;
     return shuffleArray(passwordCharacters,userSelectedlength);
@@ -78,10 +78,14 @@ function passwordCriteria(criteriaList){
 function passwordlength(){
   var min = 8;
   var max = 128;
-  userSelectedlength = parseInt(prompt(`Input the length of your password between 8 to 128`));
-  while(userSelectedlength<min || userSelectedlength>max || userSelectedlength == null){
-    userSelectedlength = parseInt(prompt(`You entered ${userSelectedlength} is out of rang. Input the length of your password between 8 to 128`));
-  }
+  userSelectedlength = parseInt(prompt('Input the length of your password between 8 to 128'));
+    while(userSelectedlength<min || userSelectedlength>max){
+        if(userSelectedlength !== null || userSelectedlength !== false){
+        userSelectedlength = parseInt(prompt(`You entered ${userSelectedlength} is out of rang. Input the length of your password between 8 to 128`));
+      }
+    }
+
+  return userSelectedlength;
 }
 
 //this to help generate the Characters randomly and returning it generatePassword function
