@@ -21,7 +21,7 @@ Working on a application that generated a random password based user-selected cr
 Everytime you run the application, you would need to refresh the screen before clicking on "Generate Password" button. 
  ### URL: 
  ```
- www.....
+ https://kabirfaisal1.github.io/PasswordGenerater/
  ```
 
  ### local
