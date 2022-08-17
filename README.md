@@ -69,8 +69,3 @@ THEN the password is either displayed in an alert or written to the page
  6. User by clicking any three or more criteria with length >128
  7. User by clicking any three or more criteria with length between 8 to 128
 ```
-## Test Image
-```
- Test 1,5,6 outcome should look:
-```
- ![Algorithm schema](../PasswordGenerater/image/criteria_met.png)

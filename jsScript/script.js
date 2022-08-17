@@ -5,7 +5,6 @@ var generateBtn = document.querySelector(`#generate`);
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector(`#password`);
-
   passwordText.value = password;
 
 }
@@ -13,13 +12,15 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener(`click`, writePassword);
 
+// empty vaule to store user interaction. this will play big role to let the script know how to perform its workflow
 var userAddingcriteria = [];
 var userSelectedlength =null ;
 
 
 
-// Add function generatePassword to set the stage to create password
+// THIS IS heart of the workflow: function generatePassword to set the stage to create password
 function generatePassword(){
+  
   var criteriaList=['lowercase', 'uppercase', 'numeric', 'special characters'];
   var alphabet= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numeric="0123456789";
@@ -27,12 +28,16 @@ function generatePassword(){
   var passwordCharacters = null;
   var randPasswordArray=Array(userSelectedlength);
 
+  //this will be used to diplay criteria question and get the return vaule.
   passwordCriteria(criteriaList);
   console.log(`selectd item(s) will be added ${userAddingcriteria}`);
 
+
+  //this will be used to diplay lenght question and get the return vaule.
   passwordlength();
   console.log(`user set length of the password to be ${userSelectedlength}`);
 
+  //this is starting the workflow and generate the password after users answers and the shuffle criteria vaules based on users selections 
   if(userAddingcriteria.length==4){
     console.log(`user only wants ${userAddingcriteria} and length of ${userSelectedlength}`);
     passwordCharacters = alphabet.toLowerCase() + alphabet + numeric + speciaCharacters;
@@ -54,7 +59,7 @@ function generatePassword(){
   }
 }
 
-
+//this is asking the criteria questions and storing it in userAddingcriteria array when they click yes(ok)
 function passwordCriteria(criteriaList){
   var i=0;
   
@@ -68,6 +73,8 @@ function passwordCriteria(criteriaList){
   }
 }
 
+
+//this is asking the lenght questions and storing it in userSelectedlength after users input and converting that vaule in int
 function passwordlength(){
   var min = 8;
   var max = 128;
@@ -77,6 +84,7 @@ function passwordlength(){
   }
 }
 
+//this to help generate the Characters randomly and returning it generatePassword function
 function shuffleArray(passwordCharacters,userSelectedlength){
   var i=0; 
   var result ='';
